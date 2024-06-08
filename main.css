@@ -127,4 +127,46 @@ h4::before {
   content:"☮️"
 }
 
+/*bonus - calender*/
+/* Set the border on each TD to be a solid 1px with color #333.
+Use the border-collapse property on the table with the class of "cal" to collapse the borders around each date into a single calendar.
+Change all the colors of the text of the links to green.
+Make all of the link texts bold.
+Center-align the content of all the TDs in the calendar.
+Change the color of the text of the days in the calendar that are not links to a half-transparent black.
+
+[NOT SURE HOW TO DO THIS ONE] Use the cursor property to indicate that a day without a link is not clickable. You'll have to analyze the HTML to figure out how to do that. 
+                              You cannot use CSS selectors to select an element and, then, apply a style to a parent element. So, you'll need to figure out a way to select those table data elements.
+
+Highlight the day indicated as "today" (look at the HTML) by setting its background color to dark violet and its text color to white.
+When the pointer (cursor) is over one of the table data cells that contains the numbers, have the table cell's background color turn lavender. */
+
+td {
+  border: 1px #333 solid;
+  align-content: center;
+}
+
+.cal {
+  border-collapse: collapse;
+}
+
+table a {
+  color: green;
+  font-weight: bold;
+}
+
+.past {
+  color: black;
+  opacity: 0.5;
+}
+
+.today {
+  background-color: darkviolet;
+  color: white;
+}
+table a:hover {
+  background-color: lavender;
+}
+
+
 
