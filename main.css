@@ -31,3 +31,100 @@ p.more {
 }
 
 /* Your code here */
+/* phase 1 */
+.wrapper {
+  font: "Helvetica Neue", "Helvetica", sans-serif;
+  background-color: #F5F5F5;
+  color: #F5F5F5;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+ul > li {
+  list-style: none;
+}
+
+/* phase 2 */
+a:hover {
+  color: #800080;
+  font-weight: bold;
+}
+
+a > span:hover {
+  color: #800080;
+  font-weight: bold;
+}
+
+/* phase 3 */
+.page-container {
+  max-width: 1200px;
+
+}
+
+#leftbar, #center, #rightbar {
+  float: left;
+  padding: 0, 30px, 0;
+  box-sizing: border-box;
+}
+
+.footer {
+  clear: both;
+}
+
+#leftbar, #rightbar {
+  width: 25%
+}
+
+
+#center {
+  width: 50%;
+  border: #464646 solid 1px;
+  border-radius: 10px;
+}
+
+#center > div {
+  float: left;
+  width: 33%;
+}
+
+#topban h2 {
+  text-align: center;
+}
+
+/* phase 4 */
+/* Use a tag+class selector to style the UL element with the class name "clfooter" and:
+
+Align the text of the UL to the center
+Give it a top border only that is one pixel solid gray
+Give it top/bottom padding of ten pixels and left/right padding of zero pixels
+Use a child combinator selector to style all LI elements that are direct children of the UL with the class name "clfooter" and:
+
+Display all LIs as inline elements using the display property
+Give all LIs in the ul.clfooter 5px padding on the right side */
+
+footer ul {
+  text-align: center;
+  border-top: 1px solid grey;
+  padding: 10px, 0, 10px;
+  /* border: 2px solid black; */
+}
+
+footer > ul > li {
+  display:inline;
+  padding-right: 5px;
+}
+
+/* Phase 5: Add pseudo-elements */
+h4::before {
+  color: purple;
+  content:"☮️"
+}
+
+
